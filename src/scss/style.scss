@@ -1,4 +1,18 @@
+@import "vendor/normalize";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/variables";
+@import "general/scaffoldings";
 
 // components
 
+@import "components/header/header";
 @import "components/footer/footer";
+
+// blocks
+
+@import "components/about/about";
+
+// subcomponents
+@import "components/logo/logo";
+@import "components/nav/nav";

@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  padding: calc(var(--grid-gap) / 2.66) 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    position: relative;
+    margin-right: var(--small-offset);
+    width: 20px;
+    height: 16px;
+    transition: transform 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-lime);
+    }
+
+    &::before {
+      box-shadow: 0 8px 0 var(--color-lime);
+    }
+
+    &::after {
+      top: 100%;
+    }
+
+    &.active {
+      transform: rotate(-90deg);
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

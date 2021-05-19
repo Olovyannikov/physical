@@ -1,0 +1,27 @@
+.about {
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--big-offset);
+  height: 623px;
+  background: var(--gradient-green);
+
+  &__descr {
+    margin: 0 0 var(--small-offset);
+    max-width: 203px;
+    font: var(--paragraph-3);
+  }
+
+  &__bg {
+    position: absolute;
+    right: -145px;
+    bottom: -180px;
+    width: 946px;
+    height: 756px;
+
+    @include desktop {
+      bottom: -148px;
+      width: 85%;
+      height: 100vh;
+    }
+  }
+}
