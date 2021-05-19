@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-white);
+  overflow-x: hidden;
 }
 
 img {
@@ -91,6 +92,7 @@ a {
 
   position: relative;
   padding: 11px 28px 12px;
+  width: fit-content;
   font: var(--paragraph-1-bold);
   color: var(--color-black);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -125,12 +127,12 @@ a {
   }
 
   &--thirdly {
+    display: flex;
     padding: 9px 45px 7px 0;
+    text-transform: uppercase;
     font: var(--heading-3);
     color: var(--color-black);
     background-color: transparent;
-    text-transform: uppercase;
-    display: flex;
     align-items: center;
 
     svg {
@@ -174,6 +176,41 @@ a {
 }
 
 @import "mixins";
+
+.radio-button {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -20px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+  }
+
+  input {
+    appearance: none;
+  }
+
+  input:checked {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: var(--color-black);
+      border-radius: 50%;
+      left: -18px;
+      top: 2px;
+    }
+  }
+}
 
 .custom-checkbox {
   @include custom-checkbox;
@@ -280,4 +317,8 @@ a {
   &::placeholder {
     color: var(--color-iron);
   }
+}
+
+.main {
+  padding-top: 44px;
 }

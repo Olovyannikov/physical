@@ -1,0 +1,20 @@
+.together {
+  padding-bottom: 258px;
+  text-align: center;
+
+  &__descr {
+    margin: 0 auto var(--big-offset);
+    max-width: 643px;
+    font: var(--paragraph-3);
+    text-align: center;
+
+    @include tablet {
+      margin: 0 auto calc(var(--big-offset) * 2);
+      font: var(--paragraph-3);
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 315px;
+  }
+}

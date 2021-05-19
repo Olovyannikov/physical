@@ -1,16 +1,19 @@
 const menu = () => {
-    const menuBtn = document.querySelector('#menu-btn');
+    const $menuBtn = document.querySelector('#menu-btn');
+    const $navigation = document.querySelector('#nav');
 
     function openMenu() {
-        menuBtn.classList.add('active');
+        $menuBtn.classList.add('active');
+        $navigation.classList.add('active')
     }
 
     function closeMenu() {
-        menuBtn.classList.remove('active');
+        $menuBtn.classList.remove('active');
+        $navigation.classList.remove('active');
     }
 
-    menuBtn.addEventListener('click', () => {
-        if (menuBtn.classList.contains('active')) {
+    $menuBtn.addEventListener('click', () => {
+        if ($menuBtn.classList.contains('active')) {
             closeMenu();
         } else {
             openMenu();
@@ -18,4 +21,4 @@ const menu = () => {
     })
 }
 
-export {menu};
+export default menu;

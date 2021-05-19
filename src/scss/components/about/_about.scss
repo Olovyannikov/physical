@@ -4,17 +4,24 @@
   padding-top: var(--big-offset);
   height: 623px;
   background: var(--gradient-green);
+  z-index: 1;
 
   &__descr {
     margin: 0 0 var(--small-offset);
     max-width: 203px;
     font: var(--paragraph-3);
+
+    @include desktop {
+      max-width: 400px;
+      font: var(--paragraph-1);
+    }
   }
 
   &__bg {
     position: absolute;
     right: -145px;
     bottom: -180px;
+    z-index: -1;
     width: 946px;
     height: 756px;
 
@@ -23,5 +30,14 @@
       width: 85%;
       height: 100vh;
     }
+  }
+
+  &__btn {
+    z-index: 10;
+  }
+
+  @include desktop {
+    padding-top: 112px;
+    height: 593px;
   }
 }

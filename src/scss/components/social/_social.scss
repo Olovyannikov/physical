@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--main-offset);
+    }
+  }
+}

@@ -4,7 +4,9 @@ const menuAccordion = () => {
     navItems.forEach(item => {
 
         item.addEventListener('click', () => {
-            item.classList.toggle('nav__item--active');
+            if (item.querySelector('.nav__submenu')) {
+                item.classList.toggle('nav__item--active');
+            }
         })
     })
 }

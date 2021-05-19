@@ -1,0 +1,27 @@
+footer.footer
+    h2.visually-hidden Подвал сайта
+    .footer__container.container
+
+        img(src='img/svg/cyclist-0.svg' aria-hidden='true').footer__char.footer__char--1
+        img(src='img/svg/cyclist-1.svg' aria-hidden='true').footer__char.footer__char--2
+
+        ul.footer__nav.list-reset
+            li.footer__item
+                a(href='#').footer__link О нас
+            li.footer__item
+                a(href='#').footer__link Спонсоры
+            li.footer__item
+                a(href='#').footer__link Разработчики
+            li.footer__item
+                a(href='#').footer__link Контакты
+            li.footer__item.footer__social
+                ul.social.list-reset
+                    li.social__item
+                        a(href='#' aria-label='facebook').social__link
+                            +svg('fb')
+                    li.social__item
+                        a(href='#' aria-label='instagram').social__link
+                            +svg('ig')
+                    li.social__item
+                        a(href='#' aria-label='youtube').social__link
+                            +svg('yt')

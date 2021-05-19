@@ -8,24 +8,40 @@
     <title>Страницы</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container container">
         <button class="header__menu-btn btn-reset" aria-label="Кнопка управления меню" aria-expanded="false" id="menu-btn"></button>
         <div class="header__logo logo"><a class="logo__image" href="#">
             <svg>
               <use href="img/sprite.svg#logo"></use>
             </svg></a></div>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" id="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item"><span class="nav__item-title">Виды двигатльной деятельности
                 <svg>
                   <use href="img/sprite.svg#chevron"></use>
                 </svg></span>
               <div class="nav__submenu">
-                <div class="nav__item-group"><a class="nav__item-link nav__item-link--search" href="#">Расширенный поиск</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Ходьба</a><a class="nav__item-link" href="#">Езда на велосипеде</a><a class="nav__item-link" href="#">Бег</a><a class="nav__item-link" href="#">Лыжная подготовка</a><a class="nav__item-link" href="#">Катание на коньках</a><a class="nav__item-link" href="#">Скандинавская ходьба</a><a class="nav__item-link" href="#">Плавание</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Йога</a><a class="nav__item-link" href="#">Воркаут</a><a class="nav__item-link" href="#">Фитнес</a><a class="nav__item-link" href="#">Различные виды танцев</a><a class="nav__item-link" href="#">Аэробика</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Футбол</a><a class="nav__item-link" href="#">Волейбол</a><a class="nav__item-link" href="#">Баскетбол</a><a class="nav__item-link" href="#">Хоккей</a><a class="nav__item-link" href="#">Подвижные игры</a><a class="nav__item-link" href="#">Различные виды единоборств</a></div>
+                <div class="container">
+                  <div class="nav__item-filter filter">
+                    <div class="filter__item"><b class="filter__title">пол</b>
+                      <label class="radio-button">мужской
+                        <input type="radio" checked="checked" name="sex" value="male"/>
+                      </label>
+                      <label class="radio-button">женский
+                        <input type="radio" name="sex" value="female"/>
+                      </label>
+                    </div>
+                    <div class="filter__item"><b class="filter__title">возраст
+                        <svg>
+                          <use href="img/sprite.svg#chevron"></use>
+                        </svg></b></div>
+                  </div>
+                  <div class="nav__item-group nav__item-group--search"><a class="nav__item-link nav__item-link--search" href="#">Расширенный поиск</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Ходьба</a><a class="nav__item-link" href="#">Езда на велосипеде</a><a class="nav__item-link" href="#">Бег</a><a class="nav__item-link" href="#">Лыжная подготовка</a><a class="nav__item-link" href="#">Катание на коньках</a><a class="nav__item-link" href="#">Скандинавская ходьба</a><a class="nav__item-link" href="#">Плавание</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Йога</a><a class="nav__item-link" href="#">Воркаут</a><a class="nav__item-link" href="#">Фитнес</a><a class="nav__item-link" href="#">Различные виды танцев</a><a class="nav__item-link" href="#">Аэробика</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Футбол</a><a class="nav__item-link" href="#">Волейбол</a><a class="nav__item-link" href="#">Баскетбол</a><a class="nav__item-link" href="#">Хоккей</a><a class="nav__item-link" href="#">Подвижные игры</a><a class="nav__item-link" href="#">Различные виды единоборств</a></div>
+                </div>
               </div>
             </li>
             <li class="nav__item"><span class="nav__item-title">Тесты</span></li>
@@ -50,6 +66,33 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="footer__container container"><img class="footer__char footer__char--1" src="img/svg/cyclist-0.svg" aria-hidden="true"/><img class="footer__char footer__char--2" src="img/svg/cyclist-1.svg" aria-hidden="true"/>
+        <ul class="footer__nav list-reset">
+          <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Спонсоры</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Разработчики</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          <li class="footer__item footer__social">
+            <ul class="social list-reset">
+              <li class="social__item"><a class="social__link" href="#" aria-label="facebook">
+                  <svg>
+                    <use href="img/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="instagram">
+                  <svg>
+                    <use href="img/sprite.svg#ig"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="youtube">
+                  <svg>
+                    <use href="img/sprite.svg#yt"></use>
+                  </svg></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>

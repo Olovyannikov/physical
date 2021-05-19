@@ -1,0 +1,27 @@
+.filter {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: var(--big-offset);
+
+  &__title {
+    margin-right: var(--big-offset);
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 60px;
+
+    label {
+      &:not(:last-child) {
+        margin-right: var(--big-offset);
+      }
+    }
+
+    svg {
+      transform: rotate(180deg);
+      width: 22px;
+      height: 8px;
+    }
+  }
+}

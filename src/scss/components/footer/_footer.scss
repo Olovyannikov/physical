@@ -1,3 +1,59 @@
 .footer {
+  position: relative;
+  padding-top: var(--big-offset);
+  padding-bottom: var(--big-offset);
+  text-align: center;
   background-color: var(--color-iron);
+
+  &__char {
+    position: absolute;
+    left: -20px;
+    top: -180px;
+
+    &--2 {
+      left: unset;
+      right: -38px;
+      top: -192px;
+    }
+
+    @include tablet {
+      left: 30%;
+
+      &--2 {
+        left: unset;
+        right: 30%;
+      }
+    }
+  }
+
+  &__nav {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    font: var(--paragraph-3);
+
+    &:not(:last-child) {
+      margin-bottom: var(--second-offset);
+    }
+
+    @include desktop {
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 118px;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: var(--big-offset);
+    @include desktop {
+      margin-top: 0;
+    }
+  }
 }

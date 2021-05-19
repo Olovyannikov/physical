@@ -8,24 +8,40 @@
     <title>Главная</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container container">
         <button class="header__menu-btn btn-reset" aria-label="Кнопка управления меню" aria-expanded="false" id="menu-btn"></button>
         <div class="header__logo logo"><a class="logo__image" href="#">
             <svg>
               <use href="img/sprite.svg#logo"></use>
             </svg></a></div>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" id="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item"><span class="nav__item-title">Виды двигатльной деятельности
                 <svg>
                   <use href="img/sprite.svg#chevron"></use>
                 </svg></span>
               <div class="nav__submenu">
-                <div class="nav__item-group"><a class="nav__item-link nav__item-link--search" href="#">Расширенный поиск</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Ходьба</a><a class="nav__item-link" href="#">Езда на велосипеде</a><a class="nav__item-link" href="#">Бег</a><a class="nav__item-link" href="#">Лыжная подготовка</a><a class="nav__item-link" href="#">Катание на коньках</a><a class="nav__item-link" href="#">Скандинавская ходьба</a><a class="nav__item-link" href="#">Плавание</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Йога</a><a class="nav__item-link" href="#">Воркаут</a><a class="nav__item-link" href="#">Фитнес</a><a class="nav__item-link" href="#">Различные виды танцев</a><a class="nav__item-link" href="#">Аэробика</a></div>
-                <div class="nav__item-group"><a class="nav__item-link" href="#">Футбол</a><a class="nav__item-link" href="#">Волейбол</a><a class="nav__item-link" href="#">Баскетбол</a><a class="nav__item-link" href="#">Хоккей</a><a class="nav__item-link" href="#">Подвижные игры</a><a class="nav__item-link" href="#">Различные виды единоборств</a></div>
+                <div class="container">
+                  <div class="nav__item-filter filter">
+                    <div class="filter__item"><b class="filter__title">пол</b>
+                      <label class="radio-button">мужской
+                        <input type="radio" checked="checked" name="sex" value="male"/>
+                      </label>
+                      <label class="radio-button">женский
+                        <input type="radio" name="sex" value="female"/>
+                      </label>
+                    </div>
+                    <div class="filter__item"><b class="filter__title">возраст
+                        <svg>
+                          <use href="img/sprite.svg#chevron"></use>
+                        </svg></b></div>
+                  </div>
+                  <div class="nav__item-group nav__item-group--search"><a class="nav__item-link nav__item-link--search" href="#">Расширенный поиск</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Ходьба</a><a class="nav__item-link" href="#">Езда на велосипеде</a><a class="nav__item-link" href="#">Бег</a><a class="nav__item-link" href="#">Лыжная подготовка</a><a class="nav__item-link" href="#">Катание на коньках</a><a class="nav__item-link" href="#">Скандинавская ходьба</a><a class="nav__item-link" href="#">Плавание</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Йога</a><a class="nav__item-link" href="#">Воркаут</a><a class="nav__item-link" href="#">Фитнес</a><a class="nav__item-link" href="#">Различные виды танцев</a><a class="nav__item-link" href="#">Аэробика</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Футбол</a><a class="nav__item-link" href="#">Волейбол</a><a class="nav__item-link" href="#">Баскетбол</a><a class="nav__item-link" href="#">Хоккей</a><a class="nav__item-link" href="#">Подвижные игры</a><a class="nav__item-link" href="#">Различные виды единоборств</a></div>
+                </div>
               </div>
             </li>
             <li class="nav__item"><span class="nav__item-title">Тесты</span></li>
@@ -40,19 +56,118 @@
         <div class="about__container container">
           <h2 class="about__title title">О проекте</h2>
           <p class="about__descr">Прежде, чем начать, пройди простой тест Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis.</p>
-                <button class="btn btn--thirdly btn--thirdly-middle" type="button">Начать
-                  <svg fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.5 35C7.85256 35 0 27.1474 0 17.5C0 7.85256 7.85256 0 17.5 0C27.1474 0 35 7.85256 35 17.5C35 27.1474 27.1474 35 17.5 35ZM17.5 1.79487C8.83974 1.79487 1.79487 8.83974 1.79487 17.5C1.79487 26.1603 8.83974 33.2051 17.5 33.2051C26.1603 33.2051 33.2051 26.1603 33.2051 17.5C33.2051 8.83974 26.1603 1.79487 17.5 1.79487Z" fill="#373C41"></path>
-                    <path d="M26.0346 17.7244L22.6513 23.5757H18.3346L20.5962 19.6718L8.48974 19.6628V15.759L20.5962 15.768L18.3526 11.8641L22.6603 11.8731L26.0346 17.7244Z" fill="#373C41"></path>
-                  </svg>
-                </button>
+          <button class="btn btn--thirdly btn--thirdly-middle">Начать
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.5 35C7.85256 35 0 27.1474 0 17.5C0 7.85256 7.85256 0 17.5 0C27.1474 0 35 7.85256 35 17.5C35 27.1474 27.1474 35 17.5 35ZM17.5 1.79487C8.83974 1.79487 1.79487 8.83974 1.79487 17.5C1.79487 26.1603 8.83974 33.2051 17.5 33.2051C26.1603 33.2051 33.2051 26.1603 33.2051 17.5C33.2051 8.83974 26.1603 1.79487 17.5 1.79487Z" fill="#373C41"></path>
+              <path d="M26.0346 17.7244L22.6513 23.5757H18.3346L20.5962 19.6718L8.48974 19.6628V15.759L20.5962 15.768L18.3526 11.8641L22.6603 11.8731L26.0346 17.7244Z" fill="#373C41"></path>
+            </svg>
+          </button>
           <svg class="about__bg">
             <use href="img/sprite.svg#about-bg"></use>
           </svg>
         </div>
       </section>
+      <section class="intro">
+        <div class="intro__container container">
+          <h2 class="intro__title title">Спорт для всех</h2>
+          <p class="intro__descr">Новичок или профи? Спорт - для всех! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+          <ul class="intro__steps list-reset">
+            <li class="intro__steps-item">
+              <svg>
+                <use href="img/sprite.svg#checklist"></use>
+              </svg><span>пройди простой тест</span>
+            </li>
+            <li class="intro__steps-item">
+              <svg>
+                <use href="img/sprite.svg#power"></use>
+              </svg><span>выполни упражнения</span>
+            </li>
+            <li class="intro__steps-item">
+              <svg>
+                <use href="img/sprite.svg#timer"></use>
+              </svg><span>проверь свой результат</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="disclaimer">
+        <h2 class="disclaimer__title title">Спорт для тебя!</h2>
+        <div class="disclaimer__container container"><img class="disclaimer__char disclaimer__char--1" src="img/svg/man-0.svg"/><img class="disclaimer__char disclaimer__char--2" src="img/svg/man-1.svg"/><img class="disclaimer__char disclaimer__char--3" src="img/svg/man-2.svg"/><img class="disclaimer__char disclaimer__char--4" src="img/svg/man-3.svg"/>
+          <ul class="disclaimer__cards list-reset">
+            <li class="disclaimer__card">
+              <h3 class="disclaimer__card-title">сайт — энциклопедия</h3>
+              <p class="disclaimer__card-descr">Ты можешь заниматься спортом не выходя из дома. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+              <a class="btn btn--thirdly btn--thirdly-middle" href="#">подробнее
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5 35C7.85256 35 0 27.1474 0 17.5C0 7.85256 7.85256 0 17.5 0C27.1474 0 35 7.85256 35 17.5C35 27.1474 27.1474 35 17.5 35ZM17.5 1.79487C8.83974 1.79487 1.79487 8.83974 1.79487 17.5C1.79487 26.1603 8.83974 33.2051 17.5 33.2051C26.1603 33.2051 33.2051 26.1603 33.2051 17.5C33.2051 8.83974 26.1603 1.79487 17.5 1.79487Z" fill="#373C41"></path>
+                  <path d="M26.0346 17.7244L22.6513 23.5757H18.3346L20.5962 19.6718L8.48974 19.6628V15.759L20.5962 15.768L18.3526 11.8641L22.6603 11.8731L26.0346 17.7244Z" fill="#373C41"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="disclaimer__card">
+              <h3 class="disclaimer__card-title">личный график</h3>
+              <p class="disclaimer__card-descr">Ты можешь заниматься спортом не выходя из дома. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+              <a class="btn btn--thirdly btn--thirdly-middle" href="#">подробнее
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5 35C7.85256 35 0 27.1474 0 17.5C0 7.85256 7.85256 0 17.5 0C27.1474 0 35 7.85256 35 17.5C35 27.1474 27.1474 35 17.5 35ZM17.5 1.79487C8.83974 1.79487 1.79487 8.83974 1.79487 17.5C1.79487 26.1603 8.83974 33.2051 17.5 33.2051C26.1603 33.2051 33.2051 26.1603 33.2051 17.5C33.2051 8.83974 26.1603 1.79487 17.5 1.79487Z" fill="#373C41"></path>
+                  <path d="M26.0346 17.7244L22.6513 23.5757H18.3346L20.5962 19.6718L8.48974 19.6628V15.759L20.5962 15.768L18.3526 11.8641L22.6603 11.8731L26.0346 17.7244Z" fill="#373C41"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="disclaimer__card">
+              <h3 class="disclaimer__card-title">дома или на улице</h3>
+              <p class="disclaimer__card-descr">Ты можешь заниматься спортом не выходя из дома. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+              <a class="btn btn--thirdly btn--thirdly-middle" href="#">подробнее
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5 35C7.85256 35 0 27.1474 0 17.5C0 7.85256 7.85256 0 17.5 0C27.1474 0 35 7.85256 35 17.5C35 27.1474 27.1474 35 17.5 35ZM17.5 1.79487C8.83974 1.79487 1.79487 8.83974 1.79487 17.5C1.79487 26.1603 8.83974 33.2051 17.5 33.2051C26.1603 33.2051 33.2051 26.1603 33.2051 17.5C33.2051 8.83974 26.1603 1.79487 17.5 1.79487Z" fill="#373C41"></path>
+                  <path d="M26.0346 17.7244L22.6513 23.5757H18.3346L20.5962 19.6718L8.48974 19.6628V15.759L20.5962 15.768L18.3526 11.8641L22.6603 11.8731L26.0346 17.7244Z" fill="#373C41"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="disclaimer__image">
+          <svg>
+            <use href="img/sprite.svg#bubble"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="together">
+        <div class="together__container container">
+          <h2 class="together__title title">Вместе веселее!</h2>
+          <p class="together__descr">Новичок или профи? Спорт - для всех! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+          <button class="btn btn--primary">вперед!</button>
+        </div>
+      </section>
       <!--include ./../components/hero/_hero-->
     </main>
+    <footer class="footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="footer__container container"><img class="footer__char footer__char--1" src="img/svg/cyclist-0.svg" aria-hidden="true"/><img class="footer__char footer__char--2" src="img/svg/cyclist-1.svg" aria-hidden="true"/>
+        <ul class="footer__nav list-reset">
+          <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Спонсоры</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Разработчики</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          <li class="footer__item footer__social">
+            <ul class="social list-reset">
+              <li class="social__item"><a class="social__link" href="#" aria-label="facebook">
+                  <svg>
+                    <use href="img/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="instagram">
+                  <svg>
+                    <use href="img/sprite.svg#ig"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="youtube">
+                  <svg>
+                    <use href="img/sprite.svg#yt"></use>
+                  </svg></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>
