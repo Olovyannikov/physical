@@ -1,31 +1,62 @@
 :root {
   // цвета
+  --color-fill-desktop: #f7f7f7;
   --color-black: #000;
+  --color-mariner: #1e7bc0;
+  --color-shakespeare: #5abbd0;
+  --color-lilac: #9d82d0;
+  --color-viola: #cb7bbf;
+  --color-curious-blue: #238fdc;
+  --color-spray: #69d9ee;
+  --color-biloba-flower: #b797ee;
+  --color-lavender-magenta: #ed8fdb;
+  --color-cabaret: #db4f69;
+  --color-fire-bush: #ed992c;
+  --color-barberry: #ecd013;
   --color-white: #fff;
-  --color-eastbay: #484283;
-  --color-main: #444b58;
-  --color-main-hover: #31343c;
-  --color-accent: #f14f4f;
-  --color-accent-hover: #cc4949;
-  --color-border: rgba(255, 255, 255, 0.5);
-  --color-bg: #fff4ee;
-  --color-cameo: #dbbba9;
-  --color-gray: #b2b5bb;
-  --color-jumbo: #808080;
+  --color-mandys-pink: #eeb6ac;
+  --color-petite-orchid: #dea095;
+  --color-kabul: #664a46;
+  --color-fern: #61be6a;
+  --color-silver-tree: #51b593;
+  --color-shamrock-light: #40dc9e;
+  --color-blush: #bc445c;
+  --color-brandy: #cb8426;
+  --color-gold: #cab311;
+  --color-iron: #d6d7da;
+  --color-eunry: #cc9c96;
+  --color-brandy-rose: #be8a82;
+  --color-woody: #473432;
+  --color-space: #373c41;
+  --color-pistachio: #8dc603;
+  --color-fruit-salad: #53a45d;
+  --color-ocean-green: #469c80;
+  --color-shamrock: #37be8a;
+  --color-lime: #a4e603;
+  --color-lime-hover: #a7e600;
+  --color-lime-active: #8dc603;
+  --gradient-green: linear-gradient(281.83deg, #a4e603 21.54%, #61be6a 107.23%);
 
   // отступы
   --grid-gap: 20px;
-  --main-offset: 40px;
+  --main-offset: 30px;
   --second-offset: 20px;
-  --small-offset: 10px;
-  --big-offset: 60px;
+  --third-offset: 25px;
+  --small-offset: 15px;
+  --big-offset: 40px;
 
   // шрифты
-  --font-family: "Intro", sans-serif;
-  --middle-high-bold: 700 30px / 140% var(--font-family);
-  --prehigh-book: 400 24px / 24px var(--font-family);
-  --prehigh-regular: 600 20px / 20px var(--font-family);
-  --middle-book: 400 16px / 140% var(--font-family);
-  --middle-regular: 600 16px / 140% var(--font-family);
-  --small-book: 400 14px / 140% var(--font-family);
+  --font-family: "Montserrat", sans-serif;
+  --heading-1: bold 36px / 44px var(--font-family);
+  --heading-2: 600 30px / 37px var(--font-family);
+  --heading-3: 600 24px / 29px var(--font-family);
+  --heading-4: 600 18px / 22px var(--font-family);
+  --heading-5: 600 16px / 20px var(--font-family);
+  --paragraph-1: normal 18px / 22px var(--font-family);
+  --paragraph-2: normal 16px / 20px var(--font-family);
+  --paragraph-3: normal 14px / 17px var(--font-family);
+  --paragraph-4: normal 11px / 13px var(--font-family);
+  --paragraph-1-bold: 600 18px / 22px var(--font-family);
+  --paragraph-2-bold: 600 16px / 20px var(--font-family);
+  --paragraph-3-bold: 600 14px / 17px var(--font-family);
 }
