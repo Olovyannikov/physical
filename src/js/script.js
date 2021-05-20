@@ -33,6 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('resize', screenTest);
-   // window.addEventListener('resize')
 })
 

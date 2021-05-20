@@ -1,0 +1,13 @@
+.pages {
+  padding-top: var(--big-offset);
+
+  &__list {
+    padding: var(--third-offset);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--color-white);
+  }
+
+  &__item {
+    margin-bottom: var(--small-offset);
+  }
+}

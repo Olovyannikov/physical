@@ -1,17 +1,13 @@
 .header {
   position: fixed;
-  padding: calc(var(--grid-gap) / 2.1) 0;
   left: 0;
   right: 0;
   top: 0;
+  z-index: 100;
+  padding: calc(var(--grid-gap) / 2.1) 0;
   width: 100%;
   background-color: var(--color-white);
-  z-index: 10;
-  transition: all .3s ease;
-
-  &.out {
-    transform: translateY(-100%);
-  }
+  transition: all 0.3s ease;
 
   &__container {
     display: flex;
@@ -51,5 +47,9 @@
     @include desktop {
       display: none;
     }
+  }
+
+  &.out {
+    transform: translateY(-100%);
   }
 }

@@ -1,0 +1,124 @@
+.start {
+  &__top {
+    background-image: url("../img/start-bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    padding-top: 48px;
+    padding-bottom: 218px;
+  }
+
+  &__filter-wrapper {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--big-offset);
+    }
+  }
+
+  &__filter-accordion {
+    .accordion {
+      margin-bottom: var(--second-offset);
+
+      &__title {
+        font: var(--paragraph-3-bold);
+      }
+
+      @include desktop {
+        margin-right: 60px;
+        margin-bottom: 0;
+
+        &:last-child {
+          margin-right: 120px;
+        }
+      }
+    }
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__filter-title {
+    display: block;
+    margin-bottom: var(--second-offset);
+    font: var(--paragraph-3-bold);
+
+    @include desktop {
+      margin: var(--main-offset) 0 var(--big-offset);
+      font: var(--heading-5);
+      text-transform: uppercase;
+    }
+  }
+
+  &__filter-gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--third-offset);
+
+    b {
+      margin-right: 46px;
+    }
+
+    .radio-button {
+      &:not(:last-child) {
+        margin-right: 48px;
+      }
+
+      @include desktop {
+        &:last-child {
+          margin-right: 60px;
+        }
+      }
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    margin-bottom: var(--third-offset);
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__filter-types {
+    display: flex;
+    flex-direction: column;
+    padding: var(--second-offset) 0;
+
+    a {
+      &:not(:last-child) {
+        margin-bottom: var(--second-offset);
+        color: var(--color-black);
+      }
+
+      &:active {
+        text-decoration: underline;
+      }
+
+      @include desktop {
+        font: var(--paragraph-3);
+
+        &:not(:last-child) {
+          margin-bottom: var(--small-offset);
+        }
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      column-gap: calc(var(--main-offset) * 2);
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 168px;
+      height: 265px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+section.start
+    .start__top
+        .start__container.container
+            h2.start__title.title С чего начать?
+    .start__container.container
+        .start__filter
+            b.start__filter-title Введите данные и мы подберем занятие для вас:
+            .start__filter-wrapper
+                .start__filter-gender
+                    b пол
+                    label.radio-button мужской
+                        input(type='radio' name='gender')
+                    label.radio-button женский
+                        input(type='radio' name='gender')
+                ul.start__filter-accordion.list-reset
+                    +accordion('возраст', 'chevron', 'right')
+                    +accordion('занятия будут проходить в', 'chevron', 'right')
+                +button('button', 'поиск', 'small')
+            .start__filter-types
+                a(href='#') Ходьба
+                a(href='#') Езда на велосипеде
+                a(href='#') Бег
+                a(href='#') Лыжная подготовка
+                a(href='#') Катание на коньках
+                a(href='#') Скандинавская ходьба
+                a(href='#') Плавание
+                a(href='#') Йога
+                a(href='#') Воркаут
+                a(href='#') Фитнес
+                a(href='#') Различные виды танцев
+                a(href='#') Аэробика
+                a(href='#') Футбол
+                a(href='#') Волейбол
+                a(href='#') Баскетбол
+                a(href='#') Хоккей
+                a(href='#') Подвижные игры
+                a(href='#') Различные виды единоборств

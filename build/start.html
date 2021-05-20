@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <title>Страницы</title>
+    <title>C чего начать?</title>
   </head>
   <body>
     <header class="header" id="header">
@@ -52,17 +52,39 @@
       </div>
     </header>
     <main class="main">
-      <section class="pages">
-        <div class="pages__container container">
-          <h2 class="pages__title title">Список страниц</h2>
-          <ul class="pages__list list-reset">
-            <li class="pages__item"><a class="pages__link" href="index.html">Главная</a></li>
-            <li class="pages__item"><a class="pages__link" href="wiki.html">Вики</a></li>
-            <li class="pages__item"><a class="pages__link" href="start.html">С чего начать?</a></li>
-            <li class="pages__item"><a class="pages__link" href="exercise.html">Уровень подготовки</a></li>
-            <li class="pages__item"><a class="pages__link" href="wiki.html">Вики</a></li>
-            <li class="pages__item"><a class="pages__link" href="search.html">С чего начать?</a></li>
-          </ul>
+      <section class="start">
+        <div class="start__top">
+          <div class="start__container container">
+            <h2 class="start__title title">С чего начать?</h2>
+          </div>
+        </div>
+        <div class="start__container container">
+          <div class="start__filter"><b class="start__filter-title">Введите данные и мы подберем занятие для вас:</b>
+            <div class="start__filter-wrapper">
+              <div class="start__filter-gender"><b>пол</b>
+                <label class="radio-button">мужской
+                  <input type="radio" name="gender"/>
+                </label>
+                <label class="radio-button">женский
+                  <input type="radio" name="gender"/>
+                </label>
+              </div>
+              <ul class="start__filter-accordion list-reset">
+                <li class="accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">возраст</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                  <div class="accordion__content" aria-hidden="true">
+                  </div>
+                </li>
+                <li class="accordion">
+                  <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">занятия будут проходить в</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                  <div class="accordion__content" aria-hidden="true">
+                  </div>
+                </li>
+              </ul>
+              <button class="btn btn--primary btn--small">поиск</button>
+            </div>
+            <div class="start__filter-types"><a href="#">Ходьба</a><a href="#">Езда на велосипеде</a><a href="#">Бег</a><a href="#">Лыжная подготовка</a><a href="#">Катание на коньках</a><a href="#">Скандинавская ходьба</a><a href="#">Плавание</a><a href="#">Йога</a><a href="#">Воркаут</a><a href="#">Фитнес</a><a href="#">Различные виды танцев</a><a href="#">Аэробика</a><a href="#">Футбол</a><a href="#">Волейбол</a><a href="#">Баскетбол</a><a href="#">Хоккей</a><a href="#">Подвижные игры</a><a href="#">Различные виды единоборств</a></div>
+          </div>
         </div>
       </section>
     </main>

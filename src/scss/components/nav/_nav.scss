@@ -7,12 +7,6 @@
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 
-  @include desktop {
-    position: static;
-    transform: unset;
-    width: 100%;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -34,15 +28,6 @@
     margin-bottom: var(--small-offset);
     width: 45%;
     cursor: pointer;
-
-    @include desktop {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0;
-      width: fit-content;
-      white-space: nowrap;
-      margin-right: 60px;
-    }
 
     &-title {
       display: flex;
@@ -99,12 +84,12 @@
 
         @include desktop {
           position: absolute;
-          background: var(--color-white);
-          top: 40px;
           left: 0;
+          top: 40px;
+          padding-top: var(--big-offset);
           width: 100%;
           height: 380px;
-          padding-top: var(--big-offset);
+          background: var(--color-white);
 
           .container {
             display: flex;
@@ -118,12 +103,16 @@
       .nav__item-title {
         margin-bottom: var(--second-offset);
 
-        @include desktop {
-          margin-bottom: 0;
-        }
-
         svg {
           transform: rotate(0);
+        }
+
+        @include desktop {
+          margin-bottom: 0;
+
+          &:focus {
+            font-weight: 600;
+          }
         }
       }
 
@@ -136,6 +125,15 @@
         }
       }
     }
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+      margin-right: 60px;
+      margin-bottom: 0;
+      width: fit-content;
+      white-space: nowrap;
+    }
   }
 
   &__submenu {
@@ -144,28 +142,26 @@
     visibility: hidden;
   }
 
-  &.active {
-    transform: translateX(0);
-  }
-
   a {
-    overflow: hidden;
-    color: inherit;
-    display: inline-block;
     position: relative;
-    width: fit-content;
+    display: inline-block;
+    overflow: hidden;
     padding-bottom: 5px;
+    width: fit-content;
+    color: inherit;
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
-      bottom: 0;
       left: 0;
+      bottom: 0;
       width: 100%;
       height: 0.1em;
       background-color: #8dc603;
       opacity: 0;
       transition: opacity 300ms, transform 300ms;
     }
+
     &:hover {
       color: #000;
     }
@@ -182,7 +178,18 @@
     transform: translate3d(-101%, 0, 0);
   }
 
-  a:hover::after, a:focus::after {
+  a:hover::after,
+  a:focus::after {
     transform: translate3d(0, 0, 0);
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  @include desktop {
+    position: static;
+    width: 100%;
+    transform: unset;
   }
 }
