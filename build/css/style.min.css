@@ -244,6 +244,9 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-white); }
+  @media (min-width: 1025px) {
+    body {
+      background-color: #f7f7f7; } }
 
 img {
   max-width: 100%; }
@@ -887,10 +890,13 @@ a {
   margin-bottom: var(--big-offset); }
   @media (min-width: 1025px) {
     .wiki-history {
-      display: flex; } }
+      display: flex;
+      justify-content: flex-start;
+      transform: translateX(-20px); } }
   .wiki-history__item {
+    margin: 0 auto;
     z-index: 1;
-    max-width: 219px; }
+    max-width: 209px; }
     .wiki-history__item:last-child {
       z-index: -3; }
     .wiki-history__item:nth-child(2) {
@@ -1136,12 +1142,36 @@ a {
   left: 0;
   z-index: -1;
   width: 100%; }
+  .wiki-accordion__image-bg img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
   .wiki-accordion__image-bg + p:first-of-type {
     margin-top: 133px; }
+
+.wiki-accordion__accessories li {
+  margin-bottom: 25px; }
+  .wiki-accordion__accessories li .wiki-accordion__list-icon {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/sport-items-1.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .wiki-accordion__accessories li:last-child .wiki-accordion__list-icon {
+    background-image: url("../img/sport-items-3.svg"); }
+  .wiki-accordion__accessories li:nth-child(2) .wiki-accordion__list-icon {
+    margin-bottom: 50px;
+    background-image: url("../img/sport-items-2.svg"); }
 
 @media (min-width: 1025px) {
   .wiki-accordion.exp .wiki-accordion__icon {
     display: none; } }
+
+.wiki-accordion__image {
+  display: none; }
 
 @media (min-width: 1025px) {
   .wiki-accordion.exp.open {
@@ -1173,6 +1203,7 @@ a {
       position: relative;
       top: -260px;
       z-index: 99;
+      margin-bottom: -180px;
       padding-top: var(--main-offset);
       padding-right: 107px;
       padding-left: 107px;
@@ -1204,7 +1235,19 @@ a {
           .wiki-accordion.exp.open:nth-child(3) .wiki-accordion__accessories ul li:nth-child(2) span {
             background-image: url("../img/sport-items-2-2.svg"); }
           .wiki-accordion.exp.open:nth-child(3) .wiki-accordion__accessories ul li:nth-child(3) span {
-            background-image: url("../img/sport-items-3-2.svg"); } }
+            background-image: url("../img/sport-items-3-2.svg"); }
+    .wiki-accordion.exp.open:nth-child(4) .wiki-accordion__control {
+      padding-bottom: var(--small-offset); }
+    .wiki-accordion.exp.open:nth-child(4) .wiki-accordion__content {
+      display: flex; }
+    .wiki-accordion.exp.open:nth-child(4) .wiki-accordion__text {
+      margin-right: 56px;
+      max-width: 608px; }
+      .wiki-accordion.exp.open:nth-child(4) .wiki-accordion__text p {
+        font: var(--paragraph-2); }
+    .wiki-accordion.exp.open:nth-child(4) .wiki-accordion__image {
+      display: block;
+      margin-top: var(--big-offset); } }
 
 .accordion__control {
   display: flex;
@@ -1243,6 +1286,17 @@ a {
     .wiki-accordion__card p {
       margin: 0;
       width: 335px;
-      font: var(--paragraph-3); } }
+      font: var(--paragraph-3); }
+  .wiki-accordion:last-child .wiki-accordion__control {
+    position: relative;
+    top: 420px; }
+  .wiki-accordion:last-child .wiki-accordion__text {
+    margin-top: 430px; }
+  .wiki-accordion:nth-child(5) .wiki-accordion__title, .wiki-accordion:nth-child(6) .wiki-accordion__title {
+    font: var(--heading-5); }
+  .wiki-accordion:nth-child(5) .wiki-accordion__icon, .wiki-accordion:nth-child(6) .wiki-accordion__icon {
+    order: 1;
+    margin-right: 0;
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=style.min.css.map */

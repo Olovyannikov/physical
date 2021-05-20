@@ -16,6 +16,10 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-white);
+
+  @include desktop {
+    background-color: #f7f7f7;
+  }
 }
 
 img {

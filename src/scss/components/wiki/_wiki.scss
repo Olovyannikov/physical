@@ -74,11 +74,14 @@
 
   @include desktop {
     display: flex;
+    justify-content: flex-start;
+    transform: translateX(-20px);
   }
 
   &__item {
+    margin: 0 auto;
     z-index: 1;
-    max-width: 219px;
+    max-width: 209px;
 
     &:last-child {
       z-index: -3;

@@ -72,9 +72,44 @@
     z-index: -1;
     width: 100%;
 
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
     + p {
       &:first-of-type {
         margin-top: 133px;
+      }
+    }
+  }
+
+  &__accessories {
+    li {
+      margin-bottom: 25px;
+
+      .wiki-accordion__list-icon {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 160px;
+        background-image: url("../img/sport-items-1.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &:last-child {
+        .wiki-accordion__list-icon {
+          background-image: url("../img/sport-items-3.svg");
+        }
+      }
+
+      &:nth-child(2) {
+        .wiki-accordion__list-icon {
+          margin-bottom: 50px;
+          background-image: url("../img/sport-items-2.svg");
+        }
       }
     }
   }
@@ -86,6 +121,10 @@
       }
     }
   }
+}
+
+.wiki-accordion__image {
+  display: none;
 }
 
 @include desktop {
@@ -131,6 +170,7 @@
       position: relative;
       top: -260px;
       z-index: 99;
+      margin-bottom: -180px;
       padding-top: var(--main-offset);
       padding-right: 107px;
       padding-left: 107px;
@@ -184,6 +224,30 @@
             }
           }
         }
+      }
+    }
+
+    &:nth-child(4) {
+      .wiki-accordion__control {
+        padding-bottom: var(--small-offset);
+      }
+
+      .wiki-accordion__content {
+        display: flex;
+      }
+
+      .wiki-accordion__text {
+        margin-right: 56px;
+        max-width: 608px;
+
+        p {
+          font: var(--paragraph-2);
+        }
+      }
+
+      .wiki-accordion__image {
+        display: block;
+        margin-top: var(--big-offset);
       }
     }
   }
@@ -245,6 +309,30 @@
         margin: 0;
         width: 335px;
         font: var(--paragraph-3);
+      }
+    }
+
+    &:last-child {
+      .wiki-accordion__control {
+        position: relative;
+        top: 420px;
+      }
+
+      .wiki-accordion__text {
+        margin-top: 430px;
+      }
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      .wiki-accordion__title {
+        font: var(--heading-5);
+      }
+
+      .wiki-accordion__icon {
+        order: 1;
+        margin-right: 0;
+        margin-left: 10px;
       }
     }
   }
