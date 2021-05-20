@@ -1,0 +1,111 @@
+.wiki {
+  .accordion__list {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__container {
+    padding-top: calc(var(--main-offset) - 2px);
+    padding-bottom: calc(var(--main-offset) + var(--second-offset));
+
+    @include desktop {
+      padding-top: 48px;
+      padding-bottom: 218px;
+    }
+  }
+
+  &__top {
+    background-image: url("../img/wiki-bg-big.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+    margin: var(--second-offset) 0 var(--small-offset);
+    font: var(--heading-5);
+    text-transform: uppercase;
+
+    @include desktop {
+      margin-top: var(--main-offset);
+      margin-bottom: var(--second-offset);
+      font: var(--heading-3);
+    }
+  }
+
+  &__descr {
+    margin: 0 0 var(--second-offset);
+    font: var(--paragraph-3);
+
+    &:last-of-type {
+      margin-bottom: var(--main-offset);
+
+      @include desktop {
+        margin-bottom: var(--big-offset);
+      }
+    }
+
+    @include desktop {
+      margin: 0 0 var(--third-offset);
+      font: var(--paragraph-2);
+    }
+  }
+
+  &__content {
+    @include desktop {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 925px;
+    }
+  }
+}
+
+.wiki-history {
+  display: none;
+  text-align: center;
+  margin-bottom: var(--big-offset);
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__item {
+    z-index: 1;
+    max-width: 219px;
+
+    &:last-child {
+      z-index: -3;
+    }
+
+    &:nth-child(2) {
+      z-index: -1;
+    }
+
+    &:nth-child(3) {
+      z-index: -2;
+    }
+  }
+
+  svg {
+    position: relative;
+    width: 243px;
+    height: 29px;
+    stroke: var(--color-white);
+    stroke-width: 3;
+  }
+
+  &__top {
+    font: var(--paragraph-3);
+  }
+
+  &__descr {
+    font: var(--paragraph-3);
+  }
+}

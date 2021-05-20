@@ -1,0 +1,9 @@
+mixin accordion(title, icon, iconPosition)
+    -iconPosition = iconPosition === 'left' ? 'accordion__icon--left' : 'accordion__icon--right'
+
+    li.accordion
+        button.accordion__control.btn-reset(aria-expanded='false')
+            span.accordion__title #{title}
+            span.accordion__icon(class=iconPosition style=`background-image: url('img/sprite.svg#${icon}')`)
+        .accordion__content(aria-hidden='true')
+            block

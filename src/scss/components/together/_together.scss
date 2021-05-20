@@ -1,6 +1,29 @@
 .together {
+  position: relative;
   padding-bottom: 258px;
   text-align: center;
+
+  &__char {
+    position: absolute;
+    left: -20px;
+    bottom: -5px;
+    z-index: 2;
+
+    &--2 {
+      left: unset;
+      right: -38px;
+      bottom: -15px;
+    }
+
+    @include tablet {
+      left: 30%;
+
+      &--2 {
+        left: unset;
+        right: 30%;
+      }
+    }
+  }
 
   &__descr {
     margin: 0 auto var(--big-offset);

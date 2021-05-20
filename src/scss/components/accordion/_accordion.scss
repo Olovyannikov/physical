@@ -1,0 +1,251 @@
+.wiki-accordion {
+  &__control {
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--second-offset);
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: none;
+    overflow: hidden;
+    padding-bottom: 0;
+    max-height: 0;
+    box-sizing: content-box;
+    font: var(--paragraph-3);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height;
+
+    p {
+      margin-top: 0;
+    }
+
+    b {
+      display: block;
+      margin-bottom: var(--second-offset);
+    }
+
+    .open & {
+      display: block;
+      padding-bottom: 18px;
+      opacity: 1;
+    }
+
+    @include desktop {
+      font: var(--paragraph-2);
+    }
+  }
+
+  &__title {
+    font: var(--heading-5);
+    text-transform: uppercase;
+
+    @include desktop {
+      font: var(--heading-3);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    order: -1;
+    margin-right: 10px;
+    width: 22px;
+    height: 8px;
+    background-image: url("../img/sprite.svg#chevron");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+
+    .open & {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__image-bg {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+
+    + p {
+      &:first-of-type {
+        margin-top: 133px;
+      }
+    }
+  }
+
+  &.exp & {
+    &__icon {
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .wiki-accordion.exp.open {
+    pointer-events: none;
+
+    .wiki-accordion__control {
+      padding-bottom: var(--big-offset);
+    }
+
+    .wiki-accordion__content {
+      max-height: 100%;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      padding-bottom: 326px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100%;
+        background: var(--gradient-green);
+        transform: translateX(-50%);
+      }
+
+      .wiki-accordion__content {
+        overflow: visible;
+      }
+
+      .wiki-accordion__control {
+        justify-content: center;
+        padding-top: 105px;
+        padding-bottom: 70px;
+      }
+    }
+
+    &:nth-child(3) {
+      position: relative;
+      top: -260px;
+      z-index: 99;
+      padding-top: var(--main-offset);
+      padding-right: 107px;
+      padding-left: 107px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: var(--color-white);
+
+      .wiki-accordion__control {
+        justify-content: center;
+        padding-bottom: var(--small-offset);
+      }
+
+      .wiki-accordion__content {
+        font: var(--paragraph-3);
+      }
+
+      .wiki-accordion__accessories {
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            height: 283px;
+
+            &:not(:last-child) {
+              margin-right: var(--second-offset);
+            }
+
+            span {
+              margin-bottom: 53px;
+              width: 100%;
+              height: 134px;
+              background-image: url("../img/sport-items-1.svg");
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+
+            &:nth-child(2) {
+              span {
+                background-image: url("../img/sport-items-2-2.svg");
+              }
+            }
+
+            &:nth-child(3) {
+              span {
+                background-image: url("../img/sport-items-3-2.svg");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion {
+  &__control {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 22px;
+    height: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+
+    &--left {
+      order: -1;
+      margin-right: 10px;
+    }
+
+    &--right {
+      margin-left: 10px;
+    }
+
+    .open & {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@include desktop {
+  .wiki-accordion {
+    &__cards {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__card {
+      padding: var(--main-offset);
+      padding-bottom: 0;
+      min-height: 250px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      background: var(--color-white);
+
+      &:not(:last-child) {
+        margin-right: var(--second-offset);
+      }
+
+      b {
+        font: var(--paragraph-3-bold);
+      }
+
+      p {
+        margin: 0;
+        width: 335px;
+        font: var(--paragraph-3);
+      }
+    }
+  }
+}

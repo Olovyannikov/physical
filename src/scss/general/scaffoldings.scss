@@ -9,10 +9,13 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
   margin: 0;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-white);
-  overflow-x: hidden;
 }
 
 img {
@@ -59,7 +62,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1210px; // ширина контейнера от края до края 1180 + паддинги по 15px = 1210px
+  max-width: 1260px; // ширина контейнера от края до края 1180 + паддинги по 15px = 1210px
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
