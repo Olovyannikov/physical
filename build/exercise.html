@@ -58,7 +58,7 @@
           <div class="swiper-container exercise-slider">
             <div class="swiper-wrapper exercise-slider__wrapper">
               <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider__title">Занятие будет:</b>
-                <div class="exercise-slider__group">
+                <div class="exercise-slider__group checked-checkbox">
                   <label class="exercise-slider__radio radio-button">самостоятельное
                     <input type="radio" name="exercise-type"/>
                   </label>
@@ -89,24 +89,88 @@
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--second">Второй уровень</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--third">Третий уровень</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--unknown">Не знаю</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="exercise__data exercise-data">
+                  <p class="exercise-data__title"><b>Введите свои данные</b></p>
+                  <div class="start__filter-wrapper">
+                    <div class="start__filter-gender"><b>пол</b>
+                      <label class="radio-button">мужской
+                        <input type="radio" name="gender"/>
+                      </label>
+                      <label class="radio-button">женский
+                        <input type="radio" name="gender"/>
+                      </label>
+                    </div>
+                    <ul class="start__filter-accordion list-reset">
+                      <li class="accordion">
+                        <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">возраст</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                        <div class="accordion__content" aria-hidden="true">
+                        </div>
+                      </li>
+                      <li class="accordion">
+                        <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">вес</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                        <div class="accordion__content" aria-hidden="true">
+                        </div>
+                      </li>
+                      <li class="accordion">
+                        <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">рост</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                        <div class="accordion__content" aria-hidden="true">
+                        </div>
+                      </li>
+                      <li class="accordion">
+                        <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">группа инвалидности (при наличии)</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                        <div class="accordion__content" aria-hidden="true">
+                          <label class="radio-button">I
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">II
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">III
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">IV
+                            <input type="radio" name="disability"/>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="accordion">
+                        <button class="accordion__control btn-reset" aria-expanded="false"><span class="accordion__title">Выберите из списка заболевания, которые у вас есть (при наличии):</span><span class="accordion__icon accordion__icon--right" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                        <div class="accordion__content" aria-hidden="true">
+                          <label class="radio-button">I
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">II
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">III
+                            <input type="radio" name="disability"/>
+                          </label>
+                          <label class="radio-button">IV
+                            <input type="radio" name="disability"/>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

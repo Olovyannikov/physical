@@ -259,6 +259,37 @@
     align-items: center;
   }
 
+  &__content {
+    display: none;
+    overflow: hidden;
+    padding-bottom: 0;
+    max-height: 0;
+    box-sizing: content-box;
+    font: var(--paragraph-3);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height;
+
+    p {
+      margin-top: var(--third-offset);
+    }
+
+    b {
+      display: block;
+      margin-bottom: var(--second-offset);
+    }
+
+    .open & {
+      display: block;
+      padding-bottom: 18px;
+      opacity: 1;
+    }
+
+    @include desktop {
+      font: var(--paragraph-2);
+    }
+  }
+
   &__icon {
     display: inline-block;
     width: 22px;

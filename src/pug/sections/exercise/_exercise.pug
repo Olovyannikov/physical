@@ -5,7 +5,7 @@ section.exercise
             .swiper-wrapper.exercise-slider__wrapper
                 .swiper-slide.exercise-slider__slide
                     b.exercise-slider__title Занятие будет:
-                    .exercise-slider__group
+                    .exercise-slider__group.checked-checkbox
                         label.exercise-slider__radio.radio-button самостоятельное
                             input(type='radio' name='exercise-type')
                         label.exercise-slider__radio.radio-button групповое
@@ -29,18 +29,50 @@ section.exercise
                                     p Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                                     p Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                             .swiper-slide.exercise-slider__slide
-                                b.exercise-slider-nested__title Первый уровень
+                                b.exercise-slider-nested__title.exercise-slider-nested__title--second Второй уровень
                                 .exercise-slider-nested__descr
                                     p Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                                     p Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                             .swiper-slide.exercise-slider__slide
-                                b.exercise-slider-nested__title Первый уровень
+                                b.exercise-slider-nested__title.exercise-slider-nested__title--third Третий уровень
                                 .exercise-slider-nested__descr
                                     p Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                                     p Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                             .swiper-slide.exercise-slider__slide
-                                b.exercise-slider-nested__title Первый уровень
+                                b.exercise-slider-nested__title.exercise-slider-nested__title--unknown Не знаю
                                 .exercise-slider-nested__descr
                                     p Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
                                     p Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.
+                    .exercise__data.exercise-data
+                        p.exercise-data__title
+                            b Введите свои данные
+                        .start__filter-wrapper
+                            .start__filter-gender
+                                b пол
+                                label.radio-button мужской
+                                    input(type='radio' name='gender')
+                                label.radio-button женский
+                                    input(type='radio' name='gender')
+                            ul.start__filter-accordion.list-reset
+                                +accordion('возраст', 'chevron', 'right')
+                                +accordion('вес', 'chevron', 'right')
+                                +accordion('рост', 'chevron', 'right')
+                                +accordion('группа инвалидности (при наличии)', 'chevron', 'right')
+                                    label.radio-button I
+                                        input(type='radio' name='disability')
+                                    label.radio-button II
+                                        input(type='radio' name='disability')
+                                    label.radio-button III
+                                        input(type='radio' name='disability')
+                                    label.radio-button IV
+                                        input(type='radio' name='disability')
+                                +accordion('Выберите из списка заболевания, которые у вас есть (при наличии):', 'chevron', 'right')
+                                    label.radio-button I
+                                        input(type='radio' name='disability')
+                                    label.radio-button II
+                                        input(type='radio' name='disability')
+                                    label.radio-button III
+                                        input(type='radio' name='disability')
+                                    label.radio-button IV
+                                        input(type='radio' name='disability')
         +button('button', 'далее', 'small')

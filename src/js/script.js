@@ -8,6 +8,7 @@ menu();
 menuAccordion();
 headerAnimation();
 accordion('wiki-accordion');
+accordion('accordion');
 slider('.exercise-slider', '.btn');
 
 window.addEventListener('DOMContentLoaded', () => {

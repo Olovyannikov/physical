@@ -4,17 +4,22 @@ SwiperCore.use([Navigation, Pagination]);
 
 const slider = (el, nextBtn) => {
     let swiper = new SwiperCore(el, {
-        autoHeight: true,
         allowTouchMove: false,
         navigation: {
             nextEl: nextBtn,
         },
+
     });
 
+    swiper.height
+
     let swiperNested = new SwiperCore('.exercise-slider-nested', {
+        slidesPerView: 1,
+        spaceBetween: 20,
         pagination: {
             el: '.exercise-slider-nested__pagination',
-            type: 'bullets'
+            type: 'bullets',
+            clickable: true
         }
 
     });

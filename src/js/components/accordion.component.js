@@ -3,15 +3,15 @@ const accordion = (element) => {
         const accordions = document.querySelectorAll(`.${element}`);
 
         accordions.forEach(el => {
-            el.addEventListener('click', (e) => {
-                const self = e.currentTarget;
-                const control = self.querySelector(`.${element}__control`);
-                const content = self.querySelector(`.${element}__content`);
+            const control = el.querySelector(`.${element}__control`);
+            control.addEventListener('click', (e) => {
 
-                self.classList.toggle('open');
+                const content = el.querySelector(`.${element}__content`);
+
+                el.classList.toggle('open')
 
                 // если открыт аккордеон
-                if (self.classList.contains('open')) {
+                if (el.classList.contains('open')) {
                     control.setAttribute('aria-expanded', true);
                     content.setAttribute('aria-hidden', false);
                     content.style.maxHeight = content.scrollHeight + 'px';

@@ -136,12 +136,12 @@ a {
 
   &--thirdly {
     display: flex;
+    align-items: center;
     padding: 9px 45px 7px 0;
-    text-transform: uppercase;
     font: var(--heading-3);
+    text-transform: uppercase;
     color: var(--color-black);
     background-color: transparent;
-    align-items: center;
 
     svg {
       position: absolute;
@@ -179,8 +179,8 @@ a {
 .title {
   margin: 0 0 var(--second-offset);
   font: var(--heading-3);
-  color: var(--color-black);
   text-transform: uppercase;
+  color: var(--color-black);
 }
 
 @import "mixins";
@@ -192,13 +192,14 @@ a {
   &::before {
     content: "";
     position: absolute;
-    display: block;
     left: -20px;
     top: 50%;
-    width: 14px;
-    height: 14px;
+    display: block;
     border: 1px solid var(--color-black);
     border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
     transform: translateY(-50%);
   }
 
@@ -210,13 +211,13 @@ a {
     &::after {
       content: "";
       position: absolute;
+      left: -18px;
+      top: 50%;
       display: block;
+      border-radius: 50%;
       width: 10px;
       height: 10px;
       background: var(--color-black);
-      border-radius: 50%;
-      left: -18px;
-      top: 50%;
       transform: translateY(-50%);
     }
   }
