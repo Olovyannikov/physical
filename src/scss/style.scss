@@ -1,4 +1,5 @@
 @import "vendor/normalize";
+@import "vendor/swiper";
 @import "general/mixins";
 @import "general/fonts";
 @import "general/variables";
@@ -17,6 +18,7 @@
 @import "components/together/together";
 @import "components/wiki/wiki";
 @import "components/start/start";
+@import "components/exercise/exercise";
 
 // subcomponents
 @import "components/pages/pages";
@@ -25,3 +27,4 @@
 @import "components/social/social";
 @import "components/filter/filter";
 @import "components/accordion/accordion";
+@import "components/card/cards";

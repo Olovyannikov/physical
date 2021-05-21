@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Определение уровня подготовки</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <button class="header__menu-btn btn-reset" aria-label="Кнопка управления меню" aria-expanded="false" id="menu-btn"></button>
+        <div class="header__logo logo"><a class="logo__image" href="#">
+            <svg>
+              <use href="img/sprite.svg#logo"></use>
+            </svg></a></div>
+        <nav class="header__nav nav" id="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item"><span class="nav__item-title">Виды двигатльной деятельности
+                <svg>
+                  <use href="img/sprite.svg#chevron"></use>
+                </svg></span>
+              <div class="nav__submenu">
+                <div class="container">
+                  <div class="nav__item-filter filter">
+                    <div class="filter__item"><b class="filter__title">пол</b>
+                      <label class="radio-button">мужской
+                        <input type="radio" checked="checked" name="sex" value="male"/>
+                      </label>
+                      <label class="radio-button">женский
+                        <input type="radio" name="sex" value="female"/>
+                      </label>
+                    </div>
+                    <div class="filter__item"><b class="filter__title">возраст
+                        <svg>
+                          <use href="img/sprite.svg#chevron"></use>
+                        </svg></b></div>
+                  </div>
+                  <div class="nav__item-group nav__item-group--search"><a class="nav__item-link nav__item-link--search" href="#">Расширенный поиск</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Ходьба</a><a class="nav__item-link" href="#">Езда на велосипеде</a><a class="nav__item-link" href="#">Бег</a><a class="nav__item-link" href="#">Лыжная подготовка</a><a class="nav__item-link" href="#">Катание на коньках</a><a class="nav__item-link" href="#">Скандинавская ходьба</a><a class="nav__item-link" href="#">Плавание</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Йога</a><a class="nav__item-link" href="#">Воркаут</a><a class="nav__item-link" href="#">Фитнес</a><a class="nav__item-link" href="#">Различные виды танцев</a><a class="nav__item-link" href="#">Аэробика</a></div>
+                  <div class="nav__item-group"><a class="nav__item-link" href="#">Футбол</a><a class="nav__item-link" href="#">Волейбол</a><a class="nav__item-link" href="#">Баскетбол</a><a class="nav__item-link" href="#">Хоккей</a><a class="nav__item-link" href="#">Подвижные игры</a><a class="nav__item-link" href="#">Различные виды единоборств</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item"><span class="nav__item-title">Тесты</span></li>
+            <li class="nav__item"><span class="nav__item-title">Глосарий</span></li>
+            <li class="nav__item"><span class="nav__item-title">Занятия</span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="exercise">
+        <div class="exercise__container container">
+          <h2 class="visually-hidden">Определение уровня подготовки</h2>
+          <div class="swiper-container exercise-slider">
+            <div class="swiper-wrapper exercise-slider__wrapper">
+              <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider__title">Занятие будет:</b>
+                <div class="exercise-slider__group">
+                  <label class="exercise-slider__radio radio-button">самостоятельное
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                  <label class="exercise-slider__radio radio-button">групповое
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                  <label class="exercise-slider__radio radio-button">с инвентарем
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                  <label class="exercise-slider__radio radio-button">без инвентаря
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                  <label class="exercise-slider__radio radio-button">в помещении
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                  <label class="exercise-slider__radio radio-button">на улице
+                    <input type="radio" name="exercise-type"/>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider__title">Определение исходного <br> уровня подготовки</b>
+                <div class="swiper-container exercise-slider-nested">
+                  <div class="swiper-pagination exercise-slider-nested__pagination"></div>
+                  <div class="swiper-wrapper exercise-slider-nested__wrapper">
+                    <div class="swiper-slide exercise-slider-nested__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                      <div class="exercise-slider-nested__descr">
+                        <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                        <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                      <div class="exercise-slider-nested__descr">
+                        <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                        <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                      <div class="exercise-slider-nested__descr">
+                        <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                        <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
+                      <div class="exercise-slider-nested__descr">
+                        <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                        <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--primary btn--small">далее</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="footer__container container">
+        <ul class="footer__nav list-reset">
+          <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Спонсоры</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Разработчики</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          <li class="footer__item footer__social">
+            <ul class="social list-reset">
+              <li class="social__item"><a class="social__link" href="#" aria-label="facebook">
+                  <svg>
+                    <use href="img/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="instagram">
+                  <svg>
+                    <use href="img/sprite.svg#ig"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="youtube">
+                  <svg>
+                    <use href="img/sprite.svg#yt"></use>
+                  </svg></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

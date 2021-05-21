@@ -1,0 +1,43 @@
+.cards {
+  .card {
+    padding: var(--big-offset) 0;
+
+    &-title {
+      margin: 0 0 var(--small-offset);
+      font: var(--heading-4);
+      text-transform: uppercase;
+
+      @include desktop {
+        font: var(--heading-5);
+      }
+    }
+
+    &-descr {
+      margin: 0 0 var(--second-offset);
+      font: var(--paragraph-3);
+
+      @include desktop {
+        margin-bottom: var(--big-offset);
+      }
+    }
+
+    @include desktop {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @include desktop {
+      padding: var(--main-offset) var(--main-offset) 60px var(--main-offset);
+      background: var(--color-white);
+
+      &:not(:last-child) {
+        margin-right: var(--third-offset);
+      }
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(var(--third-offset) * 4);
+  }
+}

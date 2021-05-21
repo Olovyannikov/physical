@@ -1,0 +1,37 @@
+.exercise {
+  .btn {
+    margin-bottom: 83px;
+  }
+}
+
+.exercise-slider {
+  margin-top: var(--second-offset);
+
+  &__title {
+    display: block;
+    margin-bottom: var(--second-offset);
+    font: var(--paragraph-2-bold);
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--second-offset);
+
+    &--vertical {
+      flex-direction: row;
+    }
+  }
+
+  &__radio {
+    margin-bottom: var(--second-offset);
+
+    &:last-child {
+      margin-bottom: var(--big-offset);
+    }
+  }
+}
+
+.exercise-slider-nested {
+
+}

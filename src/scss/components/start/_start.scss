@@ -121,4 +121,12 @@
       height: 265px;
     }
   }
+
+  &__cards {
+    display: none;
+
+    @include desktop {
+      display: flex;
+    }
+  }
 }

@@ -2,11 +2,13 @@ import menu from "./components/menu.component";
 import menuAccordion from "./components/menu-accordion.component";
 import headerAnimation from "./components/header-animation.component";
 import accordion from "./components/accordion.component";
+import slider from "./components/slider.component";
 
 menu();
 menuAccordion();
 headerAnimation();
 accordion('wiki-accordion');
+slider('.exercise-slider', '.btn');
 
 window.addEventListener('DOMContentLoaded', () => {
     let mql = window.innerWidth;
@@ -33,5 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('resize', screenTest);
+
+
 })
 
