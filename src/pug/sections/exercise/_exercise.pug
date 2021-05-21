@@ -47,7 +47,7 @@ section.exercise
                         p.exercise-data__title
                             b Введите свои данные
                         .start__filter-wrapper
-                            .start__filter-gender
+                            .start__filter-gender.checked-checkbox
                                 b пол
                                 label.radio-button мужской
                                     input(type='radio' name='gender')
@@ -58,21 +58,23 @@ section.exercise
                                 +accordion('вес', 'chevron', 'right')
                                 +accordion('рост', 'chevron', 'right')
                                 +accordion('группа инвалидности (при наличии)', 'chevron', 'right')
-                                    label.radio-button I
-                                        input(type='radio' name='disability')
-                                    label.radio-button II
-                                        input(type='radio' name='disability')
-                                    label.radio-button III
-                                        input(type='radio' name='disability')
-                                    label.radio-button IV
-                                        input(type='radio' name='disability')
-                                +accordion('Выберите из списка заболевания, которые у вас есть (при наличии):', 'chevron', 'right')
-                                    label.radio-button I
-                                        input(type='radio' name='disability')
-                                    label.radio-button II
-                                        input(type='radio' name='disability')
-                                    label.radio-button III
-                                        input(type='radio' name='disability')
-                                    label.radio-button IV
-                                        input(type='radio' name='disability')
+                                    .checked-checkbox
+                                        label.radio-button I
+                                            input(type='radio' name='disability')
+                                        label.radio-button II
+                                            input(type='radio' name='disability')
+                                        label.radio-button III
+                                            input(type='radio' name='disability')
+                                        label.radio-button IV
+                                            input(type='radio' name='disability')
+                                +accordion('Выберите из списка заболевания, которые у вас есть (при наличии):', 'chevron', 'right')
+                                    .checked-checkbox
+                                        label.radio-button I
+                                            input(type='radio' name='disability')
+                                        label.radio-button II
+                                            input(type='radio' name='disability')
+                                        label.radio-button III
+                                            input(type='radio' name='disability')
+                                        label.radio-button IV
+                                            input(type='radio' name='disability')
         +button('button', 'далее', 'small')

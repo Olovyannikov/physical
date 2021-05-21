@@ -1166,9 +1166,9 @@ a {
 
 .exercise-data .start__filter-accordion .accordion label {
   display: block;
-  margin-left: var(--second-offset);
   margin-top: var(--small-offset);
-  margin-bottom: var(--small-offset); }
+  margin-bottom: var(--small-offset);
+  margin-left: var(--second-offset); }
 
 .pages {
   padding-top: var(--big-offset); }
@@ -1517,48 +1517,49 @@ a {
       display: block;
       margin-top: var(--big-offset); } }
 
-.accordion__control {
-  display: flex;
-  align-items: center; }
-
-.accordion__content {
-  display: none;
-  overflow: hidden;
-  padding-bottom: 0;
-  max-height: 0;
-  box-sizing: content-box;
-  font: var(--paragraph-3);
-  opacity: 0;
-  transition: all 0.3s ease-out;
-  will-change: max-height; }
-  .accordion__content p {
-    margin-top: var(--third-offset); }
-  .accordion__content b {
-    display: block;
-    margin-bottom: var(--second-offset); }
-  .open .accordion__content {
-    display: block;
-    padding-bottom: 18px;
-    opacity: 1; }
-  @media (min-width: 1025px) {
-    .accordion__content {
-      font: var(--paragraph-2); } }
-
-.accordion__icon {
-  display: inline-block;
-  width: 22px;
-  height: 8px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-  transition: transform 0.3s ease-out; }
-  .accordion__icon--left {
-    order: -1;
-    margin-right: 10px; }
-  .accordion__icon--right {
-    margin-left: 10px; }
-  .open .accordion__icon {
-    transform: rotate(0deg); }
+.accordion {
+  position: relative; }
+  .accordion__control {
+    display: flex;
+    align-items: center;
+    max-width: 331px; }
+  .accordion__content {
+    display: none;
+    overflow: hidden;
+    padding-bottom: 0;
+    max-height: 0;
+    box-sizing: content-box;
+    font: var(--paragraph-3);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height; }
+    .accordion__content p {
+      margin-top: var(--third-offset); }
+    .accordion__content b {
+      display: block;
+      margin-bottom: var(--second-offset); }
+    .open .accordion__content {
+      display: block;
+      padding-bottom: 18px;
+      opacity: 1; }
+    @media (min-width: 1025px) {
+      .accordion__content {
+        font: var(--paragraph-2); } }
+  .accordion__icon {
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out; }
+    .accordion__icon--left {
+      order: -1;
+      margin-right: 10px; }
+    .accordion__icon--right {
+      margin-left: 10px; }
+    .open .accordion__icon {
+      transform: rotate(0deg); }
 
 @media (min-width: 1025px) {
   .wiki-accordion__cards {

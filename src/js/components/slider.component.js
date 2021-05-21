@@ -16,6 +16,7 @@ const slider = (el, nextBtn) => {
     let swiperNested = new SwiperCore('.exercise-slider-nested', {
         slidesPerView: 1,
         spaceBetween: 20,
+        grabCursor: true,
         pagination: {
             el: '.exercise-slider-nested__pagination',
             type: 'bullets',
@@ -29,6 +30,10 @@ const slider = (el, nextBtn) => {
     next.classList.add('swiper-button-disabled');
 
     const activateBtn = () => {
+        let checked = document.querySelectorAll('.swiper-slide-active .checked-checkbox');
+
+        let checkboxNumber = document.querySelectorAll('.swiper-slide-active .checked-checkbox').length;
+
         document.querySelectorAll('.swiper-slide-active .radio-button').forEach(radio => {
             radio.addEventListener('click', () => {
                 next.classList.remove('swiper-button-disabled');

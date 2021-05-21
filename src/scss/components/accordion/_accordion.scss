@@ -254,9 +254,12 @@
 }
 
 .accordion {
+  position: relative;
+
   &__control {
     display: flex;
     align-items: center;
+    max-width: 331px;
   }
 
   &__content {
@@ -292,9 +295,9 @@
 
   &__icon {
     display: inline-block;
-    width: 22px;
+    width: 40px;
     height: 8px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     transform: rotate(180deg);
     transition: transform 0.3s ease-out;
