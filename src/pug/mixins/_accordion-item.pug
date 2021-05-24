@@ -1,8 +1,9 @@
-mixin accordion(title, icon, iconPosition)
+mixin accordion(title, icon, iconPosition, isOpen)
+    -isOpen = isOpen === true ? 'exp' : ''
     -iconPosition = iconPosition === 'left' ? 'accordion__icon--left' : 'accordion__icon--right'
 
-    li.accordion
-        button.accordion__control.btn-reset(aria-expanded='false')
+    li.accordion(class=isOpen)
+        button.accordion__control.btn-reset(aria-expanded='false')&attributes(attributes)
             span.accordion__title #{title}
             span.accordion__icon(class=iconPosition style=`background-image: url('img/sprite.svg#${icon}')`)
         .accordion__content(aria-hidden='true')

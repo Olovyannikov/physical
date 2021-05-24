@@ -77,11 +77,12 @@
                   <label class="exercise-slider__radio radio-button">на улице
                     <input type="radio" name="exercise-type"/>
                   </label>
-                </div>
+                </div><img src="img/svg/bubble.svg" aria-hidden="true"/>
               </div>
               <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider__title">Определение исходного <br> уровня подготовки</b>
                 <div class="swiper-container exercise-slider-nested">
                   <div class="swiper-pagination exercise-slider-nested__pagination"></div>
+                  <div class="swiper-button-next exercise-slider-nested__nav"></div>
                   <div class="swiper-wrapper exercise-slider-nested__wrapper">
                     <div class="swiper-slide exercise-slider-nested__slide"><b class="exercise-slider-nested__title">Первый уровень</b>
                       <div class="exercise-slider-nested__descr">
@@ -89,19 +90,19 @@
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--second">Второй уровень</b>
+                    <div class="swiper-slide exercise-slider-nested__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--second">Второй уровень</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--third">Третий уровень</b>
+                    <div class="swiper-slide exercise-slider-nested__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--third">Третий уровень</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                       </div>
                     </div>
-                    <div class="swiper-slide exercise-slider__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--unknown">Не знаю</b>
+                    <div class="swiper-slide exercise-slider-nested__slide"><b class="exercise-slider-nested__title exercise-slider-nested__title--unknown">Не знаю</b>
                       <div class="exercise-slider-nested__descr">
                         <p>Первый уровень подготовки это Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
                         <p>Подходит для  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend sagittis turpis at convallis. Vestibulum pellentesque dapibus imperdiet. Aliquam scelerisque mauris sit amet neque porta, sit amet maximus massa posuere. Nulla lobortis scelerisque quam, at placerat justo ultrices.</p>
@@ -110,7 +111,7 @@
                   </div>
                 </div>
                 <div class="exercise__data exercise-data">
-                  <p class="exercise-data__title"><b>Введите свои данные</b></p>
+                  <p class="exercise-slider__title"><b>Введите свои данные</b></p>
                   <div class="start__filter-wrapper">
                     <div class="start__filter-gender checked-checkbox"><b>пол</b>
                       <label class="radio-button">мужской
@@ -178,9 +179,102 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide exercise-slider__slide prepare swiper-last"><b class="exercise-slider__title">Определение исходного <br> уровня подготоки: тест</b>
+                <p class="exercise-slider__descr">
+                  Выполните следущие пробы, чтобы определить Ваш уровень подготовки.
+                  В зависимост от Ваших резултьтатов, сложность и продолжительность заданий будет отличаться.
+                </p>
+                <li class="accordion exp">
+                  <button class="accordion__control btn-reset accordion__control--mod" aria-expanded="false"><span class="accordion__title">При наличии противопоказаний:</span><span class="accordion__icon accordion__icon--left" style="background-image: url('img/sprite.svg#chevron')"></span></button>
+                  <div class="accordion__content" aria-hidden="true">
+                    <p>С осторожностью (ограничено) должны использоваться продолжительные физические нагрузки средней интенсивности, физические упражнения, направленные на развитие общей и локальной выносливости, скоростно-силовых качеств; физические упражнения, вызывающие нервное перенапряжение; упражнения, сопровождающиеся значительным сотрясением тела; круговые движения головой, наклоны головы.</p>
+                    <p>Среднеэнергозатратные физические нагрузки (ходьба, скандинавская ходьба, езда на велосипеде, катания на коньках и роликах, йога, подвижные игры и развлечения, настольный теннис) приведены в приложении 1.</p>
+                  </div>
+                </li>
+                <ul class="cards list-reset">
+                  <li class="card">
+                    <div class="card-title">Проба штанге<span class="card-subtitle">(задержка дыхания на вдохе)</span></div>
+                    <p class="exercise-slider__disclaimer">До основного тестирования необходимо измерить пульс за 30 секунд в положении стоя.</p>
+                    <p class="exercise-slider__disclaimer">Воспользуйтесь таймером ниже и введите значение пульса:</p>
+                    <div class="exercise-slider__timer">
+                      <button class="exercise-slider__timer-button btn-reset">00:30
+                        <svg>
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                        <svg>
+                          <use href="img/sprite.svg#pause"></use>
+                        </svg>
+                      </button>
+                      <input class="exercise-slider__input input"/>
+                      <p>Сядьте. После короткого отдыха сидя сделайте 2-3 глубоких, полных вдоха и выдоха, а затем, сделав спокойный вдох примерно на 2/3 от полного, задержите дыхание.</p>
+                      <p>Нос лучше зажать пальцами (или спортивным зажимом для плавания). Время отмечается от момента задержки дыхания до её прекращения.</p>
+                      <p>Время отмечается от момента задержки дыхания до её прекращения.</p>
+                    </div>
+                    <div class="exercise-slider__timer">
+                      <button class="exercise-slider__timer-button btn-reset">00:30
+                        <svg>
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                        <svg>
+                          <use href="img/sprite.svg#pause"></use>
+                        </svg>
+                      </button>
+                      <p>Сразу после возобновления дыхания подсчитайте пульс за 30 секунд.</p>
+                      <input class="exercise-slider__input input"/>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="card-title">Гарвардский степ-тест</div>
+                    <p class="exercise-slider__disclaimer">До основного тестирования необходимо измерить пульс за 30 секунд в положении стоя.</p>
+                    <p class="exercise-slider__disclaimer">Воспользуйтесь таймером ниже и введите значение пульса:</p>
+                    <div class="exercise-slider__timer">
+                      <button class="exercise-slider__timer-button btn-reset">00:30
+                        <svg>
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                        <svg>
+                          <use href="img/sprite.svg#pause"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="prepare__complex">
+                      <p>Последовательность действий:</p>
+                      <ol class="list-reset">
+                        <li>одна нога поставлена на степ;</li>
+                        <li>обе ноги на степ;</li>
+                        <li>одна нога на полу;</li>
+                        <li>обе ноги на полу.</li>
+                      </ol><img src="img/sprite.svg#step" aria-hidden="true"/>
+                    </div>
+                    <p>После упражнения необходимо сесть на стул и посчитать пульс в течение 30 с</p>
+                    <div class="exercise-slider__timer">
+                      <button class="exercise-slider__timer-button btn-reset">00:30
+                        <svg>
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                        <svg>
+                          <use href="img/sprite.svg#pause"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="prepare__list-container">
+                      <label>Пульс через минуту
+                        <input type="text"/>
+                      </label>
+                      <label>Пульс через 2 минуты
+                        <input type="text"/>
+                      </label>
+                      <label>Пульс через 3 минуты
+                        <input type="text"/>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <button class="btn btn--primary btn--small">далее</button>
+          <button class="btn btn--primary btn--small btn-slider">далее</button>
+          <a class="btn btn--primary btn--small swiper-last-button" href="level-1.html">узнать</a>
         </div>
       </section>
     </main>

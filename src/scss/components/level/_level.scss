@@ -1,0 +1,64 @@
+.level {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(0deg, #f9f9f9 0%, #69d9de 100%);
+  overflow: hidden;
+  &__char {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+
+    @include desktop {
+      left: unset;
+      right: 0;
+      top: 30%;
+    }
+
+  }
+
+  &__bg {
+    position: absolute;
+    clip-path: polygon(50% 55%, 100% 50%, 100% 100%, 0 100%, 0 60%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-biloba-flower);
+  }
+
+  @include desktop {
+  }
+}
+
+.level-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--second-offset);
+
+  &__title {
+    font: var(--heading-4);
+    text-transform: uppercase;
+
+    @include desktop {
+      font: var(--heading-3);
+      margin-bottom: var(--big-offset);
+    }
+  }
+
+  &__descr {
+    @include desktop {
+      max-width: 315px;
+      font: var(--paragraph-3);
+      margin-bottom: var(--second-offset);
+    }
+  }
+
+  @include desktop {
+    padding-top: 60px;
+    align-items: flex-start;
+
+    padding-left: 10%;
+  }
+}

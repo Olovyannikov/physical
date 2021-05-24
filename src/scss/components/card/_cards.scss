@@ -12,6 +12,11 @@
       }
     }
 
+    &-subtitle {
+      display: block;
+      font: var(--heading-5);
+    }
+
     &-descr {
       margin: 0 0 var(--second-offset);
       font: var(--paragraph-3);

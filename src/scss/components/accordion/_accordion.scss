@@ -259,7 +259,7 @@
   &__control {
     display: flex;
     align-items: center;
-    max-width: 331px;
+    //max-width: 331px;
   }
 
   &__content {
@@ -369,5 +369,17 @@
         margin-left: 10px;
       }
     }
+  }
+}
+
+.exp.open {
+  pointer-events: none;
+
+  .accordion__content {
+    max-height: 100%;
+  }
+
+  .accordion__icon {
+    display: none;
   }
 }

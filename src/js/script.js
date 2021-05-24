@@ -9,7 +9,8 @@ menuAccordion();
 headerAnimation();
 accordion('wiki-accordion');
 accordion('accordion');
-slider('.exercise-slider', '.btn');
+
+slider('.exercise-slider', '.btn-slider');
 
 window.addEventListener('DOMContentLoaded', () => {
     let mql = window.innerWidth;
