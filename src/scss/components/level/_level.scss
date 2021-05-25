@@ -1,8 +1,12 @@
 .level {
+  @include desktop {
+  }
+
   position: relative;
+  overflow: hidden;
   height: 100vh;
   background: linear-gradient(0deg, #f9f9f9 0%, #69d9de 100%);
-  overflow: hidden;
+
   &__char {
     content: "";
     position: absolute;
@@ -14,9 +18,8 @@
     @include desktop {
       left: unset;
       right: 0;
-      top: 30%;
+      top: 35%;
     }
-
   }
 
   &__bg {
@@ -25,9 +28,6 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-biloba-flower);
-  }
-
-  @include desktop {
   }
 }
 
@@ -42,23 +42,22 @@
     text-transform: uppercase;
 
     @include desktop {
-      font: var(--heading-3);
       margin-bottom: var(--big-offset);
+      font: var(--heading-3);
     }
   }
 
   &__descr {
     @include desktop {
+      margin-bottom: var(--second-offset);
       max-width: 315px;
       font: var(--paragraph-3);
-      margin-bottom: var(--second-offset);
     }
   }
 
   @include desktop {
-    padding-top: 60px;
     align-items: flex-start;
-
+    padding-top: 60px;
     padding-left: 10%;
   }
 }
